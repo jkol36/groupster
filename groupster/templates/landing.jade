@@ -24,9 +24,9 @@ body
 			.container
 				ul.soc_nav
 					li
-						a.icon-social-facebook(href='http://facebook.com/flockwme')
+						a.icon-social-facebook(href='http://facebook.com/groupster')
 					li
-						a.icon-social-twitter(href='http://twitter.com/realflockwithme')
+						a.icon-social-twitter(href='http://twitter.com/groupsterapp')
 				a.logo(href="{% url 'landing' %}")
 					img(src="{% static 'img/logo.png' %}", alt="Best start for your business", heigth='40', width='45')
 				a.nav_button(href='mailto:romi@groupsterapp.com') Contact Us
@@ -45,11 +45,11 @@ body
 							- csrf_token
 							.title1.wow.flipInX(data-wow-duration='0.6s') Sign Up for Launch Date
 							.form-group
-								input#email.form-control.wow.flipInX(type='email', data-wow-delay='1s', data-wow-duration='0.2s', placeholder='Email Address', name='EMAIL')
-							.form-group
 								input#username.form-control.wow.flipInX(type='text', data-wow-delay='1.2s', data-wow-duration='0.2s', placeholder='First Name', name='FNAME')
 							.form-group
 								input#password.form-control.wow.flipInX(type='password', data-wow-delay='1.4s', data-wow-duration='0.2s', placeholder='Last Name', name='LNAME')
+							.form-group
+								input#email.form-control.wow.flipInX(type='email', data-wow-delay='1s', data-wow-duration='0.2s', placeholder='Email Address', name='EMAIL')
 					
 							button#signup.btn.btn_start.wow.flipInX(type='submit', value="Subscribe", data-wow-delay='1.6s', data-wow-duration='0.2s') START
 						
