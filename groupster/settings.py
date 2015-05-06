@@ -79,7 +79,7 @@ TEMPLATE_DIRS = (
 )
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = '/webapps/groupster_django/static'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
