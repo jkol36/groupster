@@ -354,7 +354,7 @@ a.nav_button {
 	float: right;
 	height: 40px;
 	line-height: 37px;
-	margin-left: 10px;
+	margin-left: -21px;
 	color: #fff;
 	padding: 0 20px;
 	transition: all 0.15s ease-in-out;
