@@ -1056,7 +1056,7 @@ header .soc_nav { display: none; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 
-header .logo img { content: url("../images/logo@2x.png"); }
+header .logo img { content: url("../img/logo.png"); }
 
 footer .logo img { content: url("../images/logo_dark@2x.png"); }
 
