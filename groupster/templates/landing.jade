@@ -8,17 +8,13 @@ head
 	title Groupster
 	script(type='text/javascript', src='http://code.jquery.com/jquery-1.11.0.min.js')
 	script(type='text/javascript', src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')
-	script(src="{% static 'django_ajax/js/jquery.ajax.min.js' %}", type="text/javascript")
-	script(src="{% static 'js/zopim.js' %}")
+	script(type="text/javascript", src="{% static 'js/snowstorm.js' %}")
 	link(rel='stylesheet', href="{% static 'css/animate.css' %}")
 	link(rel='stylesheet', href="{% static 'css/simple-line-icons.css' %}")
 	link(rel='stylesheet', href="{% static 'css/style.css' %}")
 	
+	
 body
-	#preloader
-		.clock
-			.arrow_sec
-			.arrow_min
 	#wrap
 		header#header
 			.container
@@ -37,7 +33,7 @@ body
 				.row
 					.col-lg-6.col-md-6.col-sm-6
 						.slogan
-							h2.wow.fadeInRight(data-wow-delay='0.6s', data-wow-duration='0.5s') Get Social
+							h2.wow.fadeInRight(data-wow-delay='0.6s', data-wow-duration='0.5s') Let's Chill
 							h3.wow.fadeInLeft(data-wow-delay='0.9s', data-wow-duration='0.5s') A mobile app focused on meeting new people with your friends by your side
 					
 					.col-lg-4.col-lg-offset-2.col-md-5.col-sm-6
@@ -67,9 +63,9 @@ body
 
 	
 
-
+script(src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js")
+script(src="{% static 'js/mailchimp.js' %}")
 script(src="{% static 'js/owl.carousel.min.js' %}")
-script(type="text/javascript", src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js")
 script(src="{% static 'js/jquery.validate.min.js' %}")
 script(src="{% static 'js/wow.min.js' %}")
 script(src="{% static 'js/smoothscroll.js' %}")
@@ -77,5 +73,4 @@ script(src="{% static 'js/jquery.stellar.min.js' %}")
 script(src="{% static 'js/jquery.superslides.min.js' %}")
 script(src="{% static 'js/placeholders.jquery.min.js' %}")
 script(src="{% static 'js/custom.js' %}")
-script(src="{% static 'js/mailchimp.js' %}")
 
