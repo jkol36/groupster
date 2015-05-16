@@ -8,7 +8,6 @@ head
 	title Groupster
 	script(type='text/javascript', src='http://code.jquery.com/jquery-1.11.0.min.js')
 	script(type='text/javascript', src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')
-	script(type="text/javascript", src="{% static 'js/snowstorm.js' %}")
 	link(rel='stylesheet', href="{% static 'css/animate.css' %}")
 	link(rel='stylesheet', href="{% static 'css/simple-line-icons.css' %}")
 	link(rel='stylesheet', href="{% static 'css/style.css' %}")
@@ -31,7 +30,7 @@ body
 				
 		section#intro
 			.container
-				.row(style="pad-bottom:500px;")
+				.row
 					.col-lg-12.col-md-12.col-sm-12
 						.slogan
 							h2.wow.fadeInRight(data-wow-delay='0.6s', data-wow-duration='0.5s') We're Hiring!
@@ -69,27 +68,7 @@ body
 		
 					
 
-	
-.modal#login-modal
-	.modal-dialog
-		.modal-content
-			.modal-header
-				p Log in to flockwithme
-			.modal-body
-				form(role='form', method='POST', action="#")
-					- csrf_token
-					.form-group
-						.input-group
-							span.input-group-addon
-								i.fa.fa-user.fa-fw
-							input.form-control(name='username', type='text', placeholder='username')
-					.form-group
-						.input-group
-							span.input-group-addon
-								i.fa.fa-lock.fa-fw
-							input.form-control(name='password', type='password', placeholder='password')
-					.form-group.text-center
-						button.btn.btn-primary.btn-lg START
+
 
 script(src="{% static 'js/owl.carousel.min.js' %}")
 script(src="{% static 'js/jquery.validate.min.js' %}")
