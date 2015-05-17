@@ -16,9 +16,6 @@ class JobSeeker(models.Model):
 
 	)
 	open_position_choices = (
-		('Administrative Aid Intern', 'Administrative Aid Intern'),
-		('Communications Intern', 'Communications Intern'),
-		('Marketing Intern', 'Marketing Intern'),
 		('Campus Ambassador', 'Campus Ambassador'),
 	)
 	name = models.CharField(blank=True, null=True, max_length=200)
