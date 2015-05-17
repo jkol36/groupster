@@ -2,7 +2,7 @@
 {% for message in messages %}
 {% if message.tags == "error"%}<div class="alert alert-danger alert-dismissable">{{message}}</div>{% else %}<div class="alert alert-success alert-dismissable">{{message}}</div>{% endif %}
 {% endfor %}
-{% endif %}<form action="{% url 'jobs' %}" role="form" id="job_form" method="POST" class="form">{% csrf_token %}
+{% endif %}<form action="{% url 'jobs' %}" role="form" enctype="multipart/form-data" id="job_form" method="POST" class="form">{% csrf_token %}
 {% for field in form %}
 {{field.label}}
 {{field}}

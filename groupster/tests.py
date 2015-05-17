@@ -13,6 +13,15 @@ class MySeleniumTest(LiveServerTestCase):
 	skills = "Backend and front end engineer"
 	why_hire = "Because I'm awesome!"
 
+	@classmethod
+	def setUpClass(cls):
+		super(MySeleniumTest, cls).setUpClass()
+		cls.selenium = WebDriver()
+
+	@classmethod
+	def tearDownClass(cls):
+		cls.selenium.quit()
+		super(MySeleniumTest, cls).tearDownClass()
 
 
 	def testJobForm(self):

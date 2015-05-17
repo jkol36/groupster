@@ -20,6 +20,7 @@ class JobSeeker(models.Model):
 	)
 	name = models.CharField(blank=True, null=True, max_length=200)
 	gender = models.CharField(choices=gender_choices, max_length=200, blank=True, null=True)
+	resume = models.FileField(blank=True, null=True)
 	college = models.CharField(max_length=200, blank=True, null=True)
 	year_in_college = models.CharField(choices=grade_choices, blank=True, null=True, max_length=200)
 	college_email = models.EmailField(max_length=200, null=True, blank=True)

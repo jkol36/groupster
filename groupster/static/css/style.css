@@ -1020,7 +1020,8 @@ body { text-align: center; }
 #intro .container { margin: 170px 0 100px 0; }
 
 .slogan p { margin: 60px 0; font-size:0.8em !important; }
-.slogan h1 {font-size: 0.9em !important;}
+.slogan h2 {font-size: 1.5em !important; padding-top:10%; margin-bottom:1%;}
+.slogan h3 {font-size: 1.1em !important;}
 
 #services .service { padding: 0 70px 60px 70px; }
 

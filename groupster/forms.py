@@ -13,8 +13,10 @@ class JobseekerForm(forms.ModelForm):
 	why_groupster = forms.CharField(label="Why Do you want to work for Groupster?", widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Because...'}))
 	skills = forms.CharField(label="What would you be able to do for Groupster?", widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': "I'm really good at design!"}))
 	why_hire = forms.CharField(label="Why Do you want to work for Groupster?", widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'This is your chance to sell yourself.'}))
+	resume = forms.FileField()
 	class Meta:
 		model = JobSeeker
-		fields = ['name', 'gender', 'college', 'year_in_college', 'college_email', 'positions_interested_in', 'affiliated_with_greek_life', 'why_groupster', 'skills', 'why_hire']
+		fields = ['name', 'gender', 'college', 'year_in_college', 'college_email', 'positions_interested_in', 'affiliated_with_greek_life', 'why_groupster', 'skills', 'why_hire', 'resume']
 		
+	
 	

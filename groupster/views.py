@@ -10,7 +10,7 @@ def LandingView(request):
 def JobsView(request):
 	if request.POST:
 		print request.POST
-		form = JobseekerForm(request.POST)
+		form = JobseekerForm(request.POST, request.FILES)
 		if form.is_valid():
 			form.save()
 			messages.success(request, "Thank You! We'll be in touch!")
@@ -18,7 +18,7 @@ def JobsView(request):
 		else:
 			for t, z in form.errors.items():
 				messages.error(request, t+z.as_text())
-				return redirect('jobs')
+			return redirect('jobs')
 
 	return render(request, 'jobs.html', {'form': JobseekerForm})
 
